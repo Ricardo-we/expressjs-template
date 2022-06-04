@@ -1,4 +1,4 @@
-module.exports = function Validator(fields, strict = false) {
+module.exports = function validator(fields, strict = false) {
 	for (const field of fields) {
 		const required = strict ? true : field.required || false;
 

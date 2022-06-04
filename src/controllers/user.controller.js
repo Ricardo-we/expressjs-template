@@ -1,6 +1,6 @@
 const { BaseController, errorResponse } = require("./BaseController");
 const User = require("../models/User");
-const userValidation = require("../validations/UserValidations");
+const userValidation = require("../validations/userValidations");
 
 class UserController extends BaseController {
 	constructor() {

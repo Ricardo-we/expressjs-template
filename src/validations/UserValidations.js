@@ -1,4 +1,4 @@
-const Validator = require("./Validator");
+const validator = require("./validator");
 
 module.exports = function validateUser(
 	username,
@@ -14,5 +14,5 @@ module.exports = function validateUser(
 			pattern: /(?=.*[\_\-#$])+(?=.*\d)+[\w\d-_#$]{3,255}/,
 		},
 	];
-	return Validator(fields, strict);
+	return validator(fields, strict);
 };
